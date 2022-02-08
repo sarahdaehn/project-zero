@@ -15,5 +15,6 @@
 - As a user, I want to see my Pet be sad when it's hungry, sleepy or bored (scale1-3)
 - As a user I want my pet to age between a kid, teenager and Adult and change with each step. 
 
+# Wireframe
 
 ![](Wireframe-projectzero.jpg)
