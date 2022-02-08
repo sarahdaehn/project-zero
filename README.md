@@ -2,12 +2,9 @@
 # MVP User Stories 
 
 
-- Player can choose between 3 Pets: 1,2,3
-- As a user, I want to name my pet;
-- As a user. I want to choose my pet;
-- When I choose my name and my Pet I want to start playing;
-- Goal my Pet is not dying 
-- As a user, I want to feed my Pet when it's hungry (1-10 scale); When it's over 10 it will not accept food; He can choose between 3 choices. 
+- As a user, I want to start my game by naming my pet, so that i get an emotional conection. 
+- As a user, I want that my Goal is that my Pet survives, so that it can grow old. 
+- As a user, I want to feed my Pet when it's hungry (1-10 scale).
 - As a user, I want to play with my pet when it's bored so it's scale get's up.
 - As a user, I want my Pet to Age, so i see him grow up.
 - The Pet will die when the Hunger, Sleepiness, and Bored is below 1.
@@ -18,3 +15,12 @@
 # Wireframe
 
 ![](Wireframe-projectzero.jpg)
+
+# Features 
+
+- As a user, I want to choose between 3 Pets: 1,2,3.
+
+- As a user, I want that i can choose between 3 Food variaton and when the scale is at 10 it declines food. 
+
+
+
