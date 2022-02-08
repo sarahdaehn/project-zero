@@ -21,6 +21,8 @@
 - As a user, I want to choose between 3 Pets: 1,2,3.
 
 - As a user, I want that i can choose between 3 Food variaton and when the scale is at 10 it declines food. 
+- As a user, I want to style my Angry Bird, so that it get's a personal touch 
+
 
 
 
