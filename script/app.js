@@ -8,14 +8,32 @@ if (nameOfAngrybird != null){
     document.getElementById("AngrysBirdsName").innerHTML = 
     "Let's play with our Angry Bird " +  nameOfAngrybird + "!";
 
-
-    //(`Let's play with your Angry Bird ${nameOfAngrybird}`);
 };
-
+// feature add button function to it 
 /*<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 Enter your Angry Bird's Name
 </button>
 */
+
+
+// start the game by setInterval Hunger 
+// when user enters name game starts 
+
+// 
+
+startGame(){
+    console.log("Let's start playing");
+};
+
+startGame(); 
+
+
+
+
+setInterval (function () {Element.innerHTML} += "Hunger" , 1000);
+
+setInterval()
+
 
 
 // Display the follwing metrics for your pet 
