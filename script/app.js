@@ -9,6 +9,10 @@ if (nameOfAngrybird != null){
     "Let's play with our Angry Bird " +  nameOfAngrybird + "!";
 
 };
+// TO DO 
+// add new Gif after name
+
+
 // feature add button function to it 
 /*<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
 Enter your Angry Bird's Name
@@ -73,6 +77,9 @@ function increaseSleepiness() {
 increaseSleepiness();
 
 
+
+
+
 function increaseSleepiness() {
     const element = document.getElementById("sleepinessbar");
     let width = 0;
@@ -105,6 +112,40 @@ function increaseSleepiness() {
   };
 
 increaseboredam();
+
+
+// attach function to the buttons 
+// make the button add 10 % to each time they press it 
+
+//id = "foodbutton"
+
+
+$("#foodbutton").on("click", () => {
+    console.log("food");
+});
+
+
+
+// id = "sleepbutton"
+
+$("#sleepbutton").on("click", () => {
+    console.log("sleep");
+});
+
+
+//id = "playbutton"
+
+$("#playbutton").on("click", () => {
+    console.log("play");
+});
+
+
+// Age 
+// changes gif when 
+
+
+
+
 
 
 
