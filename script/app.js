@@ -14,6 +14,134 @@ if (nameOfAngrybird != null){
 Enter your Angry Bird's Name
 </button>
 */
+let hunger = 1;
+let sleepiness = 1;
+let boredom = 1;
+
+// died function 
+
+/*const diedHunger = () =>{
+    $('hungerbar').text('')
+    if (hunger === 10 ) {
+        return 
+    }
+}
+*/
+            
+
+// Question - add value to my bar 
+//setInterval(function () {hungerbar.innerHTML += hunger}, 1000);
+
+// Information from W3school 
+// function Increase Hunger 
+function increaseHunger() {
+    const element = document.getElementById("hungerbar");
+    let width = 0;
+    let id = setInterval(frame, 100);
+    function frame() {
+      if (width == 100) {
+        clearInterval(id);
+      } else {
+        width++;
+        element.style.width = width + '%';
+      }
+    }
+  };
+
+
+increaseHunger();
+
+
+// id = "sleepinessbar" 
+
+function increaseSleepiness() {
+    const element = document.getElementById("sleepinessbar");
+    let width = 0;
+    let id = setInterval(frame, 100);
+    function frame() {
+      if (width == 100) {
+        clearInterval(id);
+      } else {
+        width++;
+        element.style.width = width + '%';
+      }
+    }
+  };
+
+
+increaseSleepiness();
+
+
+function increaseSleepiness() {
+    const element = document.getElementById("sleepinessbar");
+    let width = 0;
+    let id = setInterval(frame, 100);
+    function frame() {
+      if (width == 100) {
+        clearInterval(id);
+      } else {
+        width++;
+        element.style.width = width + '%';
+      }
+    }
+  };
+
+
+//id = "boredombar"
+
+  function increaseboredam() {
+    const element = document.getElementById("boredombar");
+    let width = 0;
+    let id = setInterval(frame, 100);
+    function frame() {
+      if (width == 100) {
+        clearInterval(id);
+      } else {
+        width++;
+        element.style.width = width + '%';
+      }
+    }
+  };
+
+increaseboredam();
+
+
+
+
+
+
+/*
+for (let hunger = 1; )
+//id hungerbar
+const hunger = 
+setInterval
+document.getElementById("hungerbar").innerHTML
+= 
+*/
+
+
+// class progressHunger
+/*function hungerIncrease(){
+    let intervalID = window.setInterval ()
+}
+
+function hungerInterval() {
+    if(hunger = 1) {
+
+    }
+
+}; 
+
+
+if (hungry => ) {
+    hunger++
+}
+
+const startGame = function () {
+    time = setInterval(function()){
+        
+    }
+}
 
 
 // start the game by setInterval Hunger 
@@ -21,6 +149,8 @@ Enter your Angry Bird's Name
 
 // 
 
+
+const startGame = ()
 startGame(){
     console.log("Let's start playing");
 };
