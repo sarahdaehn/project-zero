@@ -14,9 +14,9 @@ if (nameOfAngrybird != null){
 Enter your Angry Bird's Name
 </button>
 */
-let hunger = 1;
+let hunger = 4;
 let sleepiness = 1;
-let boredom = 1;
+let boredom = 5;
 
 // died function 
 
@@ -33,11 +33,12 @@ let boredom = 1;
 //setInterval(function () {hungerbar.innerHTML += hunger}, 1000);
 
 // Information from W3school 
+
 // function Increase Hunger 
 function increaseHunger() {
     const element = document.getElementById("hungerbar");
     let width = 0;
-    let id = setInterval(frame, 100);
+    let id = setInterval(frame, 300);
     function frame() {
       if (width == 100) {
         clearInterval(id);
@@ -57,7 +58,7 @@ increaseHunger();
 function increaseSleepiness() {
     const element = document.getElementById("sleepinessbar");
     let width = 0;
-    let id = setInterval(frame, 100);
+    let id = setInterval(frame, 300);
     function frame() {
       if (width == 100) {
         clearInterval(id);
@@ -75,7 +76,7 @@ increaseSleepiness();
 function increaseSleepiness() {
     const element = document.getElementById("sleepinessbar");
     let width = 0;
-    let id = setInterval(frame, 100);
+    let id = setInterval(frame, 300);
     function frame() {
       if (width == 100) {
         clearInterval(id);
@@ -92,7 +93,7 @@ function increaseSleepiness() {
   function increaseboredam() {
     const element = document.getElementById("boredombar");
     let width = 0;
-    let id = setInterval(frame, 100);
+    let id = setInterval(frame, 300);
     function frame() {
       if (width == 100) {
         clearInterval(id);
