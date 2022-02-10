@@ -18,7 +18,7 @@ if (nameOfAngrybird != null){
 Enter your Angry Bird's Name
 </button>
 */
-let hunger = 4;
+let hunger = 2;
 let sleepiness = 1;
 let boredom = 5;
 
@@ -40,15 +40,16 @@ let boredom = 5;
 
 // function Increase Hunger 
 function increaseHunger() {
+
+    // width = hunger / 10 
     const element = document.getElementById("hungerbar");
-    let width = 0;
     let id = setInterval(frame, 300);
     function frame() {
-      if (width == 100) {
+      if (hunger == 10) {
         clearInterval(id);
       } else {
-        width++;
-        element.style.width = width + '%';
+        hunger++;
+        element.style.width = `${hunger * 10}%`;
       }
     }
   };
@@ -115,6 +116,9 @@ increaseboredam();
 
 
 // attach function to the buttons 
+
+
+
 // make the button add 10 % to each time they press it 
 
 //id = "foodbutton"
@@ -122,9 +126,12 @@ increaseboredam();
 
 $("#foodbutton").on("click", () => {
     console.log("food");
+    hunger = hunger - 1
+
 });
 
 
+ 
 
 // id = "sleepbutton"
 
@@ -146,7 +153,31 @@ $("#playbutton").on("click", () => {
 
 
 
+/*
+class AngryBird {
+    constructor(name){
+        this.age = 0;
+        this.food = 1;
+        this.sleepiness = 1;
+        this.boredom = 1;
+        this.name = nameOfAngrybird;
+     
+    };
 
+const food  = document.getElementById("myBtn").value; 
+
+document.getElementById("myBtn").value = "newButtonValue"; 
+
+
+var input = document.querySelector("#your-input-id")
+var buttons = document.querySelectorAll("button.number-button")
+
+
+for (i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function(event) {
+    input.value = input.value + event.currentTarget.value
+  })
+}
 
 
 
@@ -308,13 +339,10 @@ food(){
 
 
 
- hunger (){
 
- }    
-     
-
-const newAngryBird = new Angrybird("");
-
-console.log(newAngryBird);
 */
+
+
+// TO DO update hunger bar 
+
 
