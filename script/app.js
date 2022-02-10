@@ -32,7 +32,7 @@ function increaseHunger() {
     let id = setInterval(frame, 1500);
     function frame() {
       if (hunger == 10) {
-        //clearInterval(id); //timer 
+        //alert(`Sorry your ${nameOfAngrybird} died!`);
       } else {
         hunger++;
         updateFoodBar();
@@ -56,7 +56,7 @@ function increaseSleepiness() {
     let id = setInterval(frame, 1500);
     function frame() {
       if (sleepiness == 10) {
-        //clearInterval(id);
+        //alert(`Sorry your ${nameOfAngrybird} died!`);
       } else {
         sleepiness++;
         updateSleepBar();
@@ -75,21 +75,21 @@ function updateSleepBar() {
 
 //id = "boredombar"  boredom
 
-  function increaseboredam() {
+  function increaseBoredom() {
     let id = setInterval(frame, 1500);
     function frame() {
       if (boredom == 10) {
-        //clearInterval(id);
+        //alert(`Sorry your ${nameOfAngrybird} died!`);
       } else {
         boredom++;
-        updateboredom();
+        updateBoredom();
       }
     }
   };
 
-increaseboredam();
+  increaseBoredom();
 
-function updateboredom() {
+function updateBoredom() {
     const element = document.getElementById("boredombar");
     element.style.width = `${boredom * 10}%`;
 };
@@ -120,8 +120,14 @@ $("#sleepbutton").on("click", () => {
 $("#playbutton").on("click", () => {
     console.log("play");
     boredom = boredom - 1;
-    updateboredom();
+    updateBoredom();
 });
+
+
+
+
+
+
 
 
 // Age 
