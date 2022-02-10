@@ -18,9 +18,9 @@ if (nameOfAngrybird != null){
 Enter your Angry Bird's Name
 </button>
 */
-let hunger = 2;
-let sleepiness = 1;
-let boredom = 5;
+let hunger = 0;
+let sleepiness = 0;
+let boredom = 0;
 
 // died function 
 
@@ -36,27 +36,30 @@ let boredom = 5;
 // Question - add value to my bar 
 //setInterval(function () {hungerbar.innerHTML += hunger}, 1000);
 
-// Information from W3school 
-
+// structure from the fucntion from W3school 
+// feature increase timer - quicker reaction
 // function Increase Hunger 
-function increaseHunger() {
-
-    // width = hunger / 10 
-    const element = document.getElementById("hungerbar");
-    let id = setInterval(frame, 300);
+function increaseHunger() { 
+    let id = setInterval(frame, 1500);
     function frame() {
       if (hunger == 10) {
-        clearInterval(id);
+        //clearInterval(id); //timer 
       } else {
         hunger++;
-        element.style.width = `${hunger * 10}%`;
+        updateFoodBar();
       }
     }
   };
 
-
 increaseHunger();
 
+
+//takes the hungerbar element and displays the hungerBar 
+
+function updateFoodBar() {
+    const element = document.getElementById("hungerbar");
+    element.style.width = `${hunger * 10}%`;
+};
 
 // id = "sleepinessbar" 
 
@@ -115,6 +118,12 @@ function increaseSleepiness() {
 increaseboredam();
 
 
+
+    
+     
+
+
+
 // attach function to the buttons 
 
 
@@ -123,11 +132,11 @@ increaseboredam();
 
 //id = "foodbutton"
 
-
+// function which responds to the button clicks and reduces hunger by one runs the function updateFoodbar 
 $("#foodbutton").on("click", () => {
     console.log("food");
-    hunger = hunger - 1
-
+    hunger = hunger - 1;
+    updateFoodBar();
 });
 
 
