@@ -22,17 +22,6 @@ let hunger = 0;
 let sleepiness = 0;
 let boredom = 0;
 
-// died function 
-
-/*const diedHunger = () =>{
-    $('hungerbar').text('')
-    if (hunger === 10 ) {
-        return 
-    }
-}
-*/
-            
-
 // Question - add value to my bar 
 //setInterval(function () {hungerbar.innerHTML += hunger}, 1000);
 
@@ -84,36 +73,26 @@ function updateSleepBar() {
 };
 
 
-//id = "boredombar"
+//id = "boredombar"  boredom
 
   function increaseboredam() {
-    const element = document.getElementById("boredombar");
-    let width = 0;
-    let id = setInterval(frame, 300);
+    let id = setInterval(frame, 1500);
     function frame() {
-      if (width == 100) {
-        clearInterval(id);
+      if (boredom == 10) {
+        //clearInterval(id);
       } else {
-        width++;
-        element.style.width = width + '%';
+        boredom++;
+        updateboredom();
       }
     }
   };
 
 increaseboredam();
 
-
-
-    
-     
-
-
-
-// attach function to the buttons 
-
-
-
-// make the button add 10 % to each time they press it 
+function updateboredom() {
+    const element = document.getElementById("boredombar");
+    element.style.width = `${boredom * 10}%`;
+};
 
 //id = "foodbutton"
 
@@ -140,6 +119,8 @@ $("#sleepbutton").on("click", () => {
 
 $("#playbutton").on("click", () => {
     console.log("play");
+    boredom = boredom - 1;
+    updateboredom();
 });
 
 
