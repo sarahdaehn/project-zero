@@ -1,5 +1,22 @@
- /*<img src="https://imgur.com/gallery/sj2EeQR" alt="Angry Bird"/>*/
- .selector-for-some-widget {
+body {
+  background-image:url("AngryBird-yellow.png");
+}
+
+
+
+.selector-for-some-widget {
     box-sizing: content-box;
   }
   
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+
+}
+
+.custom-banner-image {
+
+  background-image: url('https://pixabay.com/de/illustrations/tapeten-angrybirds-angry-bird-gelb-5175527/');
+  }
+
