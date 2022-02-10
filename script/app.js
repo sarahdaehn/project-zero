@@ -64,15 +64,13 @@ function updateFoodBar() {
 // id = "sleepinessbar" 
 
 function increaseSleepiness() {
-    const element = document.getElementById("sleepinessbar");
-    let width = 0;
-    let id = setInterval(frame, 300);
+    let id = setInterval(frame, 1500);
     function frame() {
-      if (width == 100) {
-        clearInterval(id);
+      if (sleepiness == 10) {
+        //clearInterval(id);
       } else {
-        width++;
-        element.style.width = width + '%';
+        sleepiness++;
+        updateSleepBar();
       }
     }
   };
@@ -80,23 +78,10 @@ function increaseSleepiness() {
 
 increaseSleepiness();
 
-
-
-
-
-function increaseSleepiness() {
+function updateSleepBar() {
     const element = document.getElementById("sleepinessbar");
-    let width = 0;
-    let id = setInterval(frame, 300);
-    function frame() {
-      if (width == 100) {
-        clearInterval(id);
-      } else {
-        width++;
-        element.style.width = width + '%';
-      }
-    }
-  };
+    element.style.width = `${sleepiness * 10}%`;
+};
 
 
 //id = "boredombar"
@@ -146,6 +131,8 @@ $("#foodbutton").on("click", () => {
 
 $("#sleepbutton").on("click", () => {
     console.log("sleep");
+    sleepiness = sleepiness - 1;
+    updateSleepBar();
 });
 
 
