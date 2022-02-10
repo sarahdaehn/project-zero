@@ -22,7 +22,7 @@ let hunger = 0;
 let sleepiness = 0;
 let boredom = 0;
 let life = true;
-let age = 0; 
+let age = 1; 
 
 /*
 
@@ -160,7 +160,7 @@ $("#playbutton").on("click", () => {
 function increaseAge() {
   let id = setInterval(frame, 5000);
   function frame() {
-    if (age == 10) {
+    if (age === 10) {
     clearInterval(id);
     } else {
       age++;
@@ -175,9 +175,11 @@ increaseAge();
 function updateAge() {
   const element = document.getElementById("age");
   element.style.width = `${age * 10}%`;
-  age = age + 1;
   console.log(age);
   $('#age').text('Age'+ age);
 };
 
 updateAge();
+
+
+// Why does is change from 1 - 3 
