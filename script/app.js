@@ -21,6 +21,24 @@ Enter your Angry Bird's Name
 let hunger = 0;
 let sleepiness = 0;
 let boredom = 0;
+let life = true;
+/*
+
+
+life == false {
+    if (hunger, sleepiness, boredom == 10);
+}
+if (life == false){
+clearInterval(id)
+}
+*/
+/*function checkLife(){
+    if (life == false);
+    console.log(life);
+}
+if 
+*/
+
 
 // Question - add value to my bar 
 //setInterval(function () {hungerbar.innerHTML += hunger}, 1000);
@@ -31,8 +49,8 @@ let boredom = 0;
 function increaseHunger() { 
     let id = setInterval(frame, 1500);
     function frame() {
-      if (hunger == 10) {
-      alert("Sorry your Angry Bird died!");
+      if (hunger == 10) {   
+      alert(`Sorry your ${nameOfAngrybird} died of hunger!`);
       clearInterval(id);
       } else {
         hunger++;
@@ -57,7 +75,8 @@ function increaseSleepiness() {
     let id = setInterval(frame, 1500);
     function frame() {
       if (sleepiness == 10) {
-        //alert(`Sorry your ${nameOfAngrybird} died!`);
+      alert(`Sorry your ${nameOfAngrybird} died of sleepiness!`);
+      clearInterval(id);
       } else {
         sleepiness++;
         updateSleepBar();
@@ -80,7 +99,8 @@ function updateSleepBar() {
     let id = setInterval(frame, 1500);
     function frame() {
       if (boredom == 10) {
-        //alert(`Sorry your ${nameOfAngrybird} died!`);
+      alert(`Sorry your ${nameOfAngrybird} died of boredom!`);
+      clearInterval(id);
       } else {
         boredom++;
         updateBoredom();
