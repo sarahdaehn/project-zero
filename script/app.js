@@ -148,6 +148,7 @@ $("#playbutton").on("click", () => {
 
 
 
+
 // Feature 
 // when pet dies the other bars stop and the game starts over. 
 
@@ -182,4 +183,9 @@ function updateAge() {
 updateAge();
 
 
-// Why does is change from 1 - 3 
+// Morph your pet at certain ages 
+// if age == 5 change gif // element CSS
+
+
+
+
