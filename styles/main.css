@@ -1,6 +1,4 @@
-body {
-  background-image:url("AngryBird-yellow.png");
-}
+
 
 
 
@@ -20,3 +18,7 @@ img {
   background-image: url('https://pixabay.com/de/illustrations/tapeten-angrybirds-angry-bird-gelb-5175527/');
   }
 
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
