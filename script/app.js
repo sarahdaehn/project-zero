@@ -32,7 +32,8 @@ function increaseHunger() {
     let id = setInterval(frame, 1500);
     function frame() {
       if (hunger == 10) {
-        //alert(`Sorry your ${nameOfAngrybird} died!`);
+      alert("Sorry your Angry Bird died!");
+      clearInterval(id);
       } else {
         hunger++;
         updateFoodBar();
