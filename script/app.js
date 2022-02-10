@@ -22,6 +22,8 @@ let hunger = 0;
 let sleepiness = 0;
 let boredom = 0;
 let life = true;
+let age = 0; 
+
 /*
 
 
@@ -47,7 +49,7 @@ if
 // feature increase timer - quicker reaction
 // function Increase Hunger 
 function increaseHunger() { 
-    let id = setInterval(frame, 1500);
+    let id = setInterval(frame, 3000);
     function frame() {
       if (hunger == 10) {   
       alert(`Sorry your ${nameOfAngrybird} died of hunger!`);
@@ -72,7 +74,7 @@ function updateFoodBar() {
 // id = "sleepinessbar" 
 
 function increaseSleepiness() {
-    let id = setInterval(frame, 1500);
+    let id = setInterval(frame, 3000);
     function frame() {
       if (sleepiness == 10) {
       alert(`Sorry your ${nameOfAngrybird} died of sleepiness!`);
@@ -96,7 +98,7 @@ function updateSleepBar() {
 //id = "boredombar"  boredom
 
   function increaseBoredom() {
-    let id = setInterval(frame, 1500);
+    let id = setInterval(frame, 3000);
     function frame() {
       if (boredom == 10) {
       alert(`Sorry your ${nameOfAngrybird} died of boredom!`);
@@ -146,207 +148,36 @@ $("#playbutton").on("click", () => {
 
 
 
+// Feature 
+// when pet dies the other bars stop and the game starts over. 
 
 
 
+// Increase your pet's age every x minutes 
 
+// id = "age"
 
-// Age 
-// changes gif when 
-
-
-
-
-/*
-class AngryBird {
-    constructor(name){
-        this.age = 0;
-        this.food = 1;
-        this.sleepiness = 1;
-        this.boredom = 1;
-        this.name = nameOfAngrybird;
-     
-    };
-
-const food  = document.getElementById("myBtn").value; 
-
-document.getElementById("myBtn").value = "newButtonValue"; 
-
-
-var input = document.querySelector("#your-input-id")
-var buttons = document.querySelectorAll("button.number-button")
-
-
-for (i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function(event) {
-    input.value = input.value + event.currentTarget.value
-  })
-}
-
-
-
-
-
-/*
-for (let hunger = 1; )
-//id hungerbar
-const hunger = 
-setInterval
-document.getElementById("hungerbar").innerHTML
-= 
-*/
-
-
-// class progressHunger
-/*function hungerIncrease(){
-    let intervalID = window.setInterval ()
-}
-
-function hungerInterval() {
-    if(hunger = 1) {
-
+function increaseAge() {
+  let id = setInterval(frame, 5000);
+  function frame() {
+    if (age == 10) {
+    clearInterval(id);
+    } else {
+      age++;
+      updateAge();
     }
-
-}; 
-
-
-if (hungry => ) {
-    hunger++
-}
-
-const startGame = function () {
-    time = setInterval(function()){
-        
-    }
-}
+  }
+  };
+increaseAge();
 
 
-// start the game by setInterval Hunger 
-// when user enters name game starts 
 
-// 
-
-
-const startGame = ()
-startGame(){
-    console.log("Let's start playing");
+function updateAge() {
+  const element = document.getElementById("age");
+  element.style.width = `${age * 10}%`;
+  age = age + 1;
+  console.log(age);
+  $('#age').text('Age'+ age);
 };
 
-startGame(); 
-
-
-
-
-setInterval (function () {Element.innerHTML} += "Hunger" , 1000);
-
-setInterval()
-
-
-
-// Display the follwing metrics for your pet 
-
-/*
-Hunger (1-10scale)
-Sleepiness (1-10 scale )
-Boredom(1-10)
-
-*/
-
-
-
-
-
-
-
-
-
-
-//$("#exampleMaodel").modal()
-
-
-
-
-
-
-//let hunger = 0;
-//let sleep = 0;
-//let bored = 0;
-
-/*<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Enter your Angry Bird's Name
-  </button> */
-
-//  Ask for the name to start the game 
-//$('.btn btn-primary').on('click', () => {
-	//console.log('It worked!!!!');
-//});
-
-//$('.btn.danger').button('toggle').addClass('fat')
-
-//$(document).on('.btn btn-primary');
-
-//Button function Logic
-
-// feed Pet 
-// When the user clicks on the button hunger he feeds the pet 1 
-
- //class Angrybird {
-     //constructor (name){
-        //this.name = name;
-        //this.hunger = 0;
-        //this.sleep = 0;
-        //this.bored = 0; 
-    
-    //feed(food){
-     //return this.hunger += food;
-
-
-     //const myAngrybird = new Angrybird (Sarah);
-
-
-     /*class Angrybird {
-         constructor (name){
-             this.name = name;
-             this.hunger = 1;
-             this.sleepiness = 1;
-             this.boredom = 1; 
-             this.age = 1;
-         }
-     }
-
-
-// Increase your pet's Hunger / inside Methods 
-
-food(){
-    if(this.hunger
-}
-
-// Increase your pet's Sleepiness 
-
-
-// Increase your pet's Boredom 
-
-
-
-
- // Increase your pet's age every x minutes 
-
- // Increase your pet's Hunger /sleepiness and bores metrics on an interval of your pet 
-
-// your pet should die if hunger sleepiness hits 10
-
-// if this.hunger >= 10; 
-  //  return (maybe a pop up / AngryBird is dead)
-
-
-
-
-
-
-*/
-
-
-// TO DO update hunger bar 
-
-
+updateAge();
