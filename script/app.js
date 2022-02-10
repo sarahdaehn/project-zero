@@ -166,6 +166,7 @@ function increaseAge() {
     } else {
       age++;
       updateAge();
+      changeAgePicture();
     }
   }
   };
@@ -185,7 +186,48 @@ updateAge();
 
 // Morph your pet at certain ages 
 // if age == 5 change gif // element CSS
+/*
+function changeGif() {
+  if (age === 3){
+
+  } e
+}
+if (age === 3) {
+  picture;
+} else if (age === 5){
+    picture
+  }
+} else {
+  if (age === )
+
+}
+let hour = new Date().getHours();
+if (hour < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
 
 
+document.getElementById("age1").src = "Images/giphy-age3.gif";
+*/
 
+function changeAgePicture() {
+  if (age === 3) {
+    $('div#age1 img').attr("src", "./Images/giphy-age3.gif");
 
+    //document.getElementById("age1").src = "../Images/giphy-age3.gif";
+    console.log("change Age 3");
+
+};
+if (age === 5) {
+  $('div#age1 img').attr("src", "Images/giphy-age5.gif");
+  console.log("change Age 5");
+};
+if (age === 7) {
+  $('div#age1 img').attr("src", "Images/giphy-age7.gif");
+  console.log("change Age 7");
+};
+
+};
+changeAgePicture();
