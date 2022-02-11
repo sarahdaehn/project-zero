@@ -202,7 +202,9 @@ Feature HTML
 Feature CSS
 
 1. header 
-2. GIF Quality 
+2. GIF Quality - stop the zoom in when the Browser grows
+3. Change Background first loading 
+4. change colors from the buttons and bar 
 
 */
 
