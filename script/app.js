@@ -13,7 +13,6 @@ if (nameOfAngrybird != null){
 let hunger = 0;
 let sleepiness = 0;
 let boredom = 0;
-let life = true;
 let age = 1; 
 
 
@@ -143,7 +142,7 @@ function updateAge() {
   const element = document.getElementById("age");
   element.style.width = `${age * 10}%`;
   console.log(age);
-  $('#age').text('Age'+ age);
+  $('#age').text('Age '+  age);
 };
 
 updateAge();
@@ -169,19 +168,6 @@ if (age === 7) {
 };
 changeAgePicture();
 
-// check life status
-
-function checkLifeStatus () {
-  if (hunger < 10){
-    life = true;
-    console.log(life);
-  } else {
-    life == false
-    console.log(life);
-  }
-};
-
-checkLifeStatus();
 
 /* 
 Feature JS 

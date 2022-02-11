@@ -42,6 +42,11 @@ Angry Bird is made like the Tamagoshi System. You have to feed, let it sleep or 
 4. add value to Progress bar 
 5. When Angry Birds dies pop up Gif and games ends 
 6. restart the game automatically without to refresh the browser 
+7. Pop up notification when Hunger, Sleepiness or Boredom is close to 10 and your AngryBird is close to die. 
+8. Add sounds to the buttons
+9. Add Age also to a Progress Bar
+
+
 
 
 
@@ -55,6 +60,7 @@ Angry Bird is made like the Tamagoshi System. You have to feed, let it sleep or 
 2. GIF Quality - stop the zoom in when the Browser grows - object-fit : fill / cover;
 3. Change Background first loading 
 4. change colors from the buttons and bar 
+5. Browser ajustments 
 
 
 # Technologies 
