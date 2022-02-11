@@ -9,44 +9,16 @@ if (nameOfAngrybird != null){
     "Let's play with our Angry Bird " +  nameOfAngrybird + "!";
 
 };
-// TO DO 
-// add new Gif after name
 
-
-// feature add button function to it 
-/*<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-Enter your Angry Bird's Name
-</button>
-*/
 let hunger = 0;
 let sleepiness = 0;
 let boredom = 0;
 let life = true;
 let age = 1; 
 
-/*
 
+// structure for Interval function from W3school 
 
-life == false {
-    if (hunger, sleepiness, boredom == 10);
-}
-if (life == false){
-clearInterval(id)
-}
-*/
-/*function checkLife(){
-    if (life == false);
-    console.log(life);
-}
-if 
-*/
-
-
-// Question - add value to my bar 
-//setInterval(function () {hungerbar.innerHTML += hunger}, 1000);
-
-// structure from the fucntion from W3school 
-// feature increase timer - quicker reaction
 // function Increase Hunger 
 function increaseHunger() { 
     let id = setInterval(frame, 3000);
@@ -147,13 +119,6 @@ $("#playbutton").on("click", () => {
 });
 
 
-
-
-// Feature 
-// when pet dies the other bars stop and the game starts over. 
-
-
-
 // Increase your pet's age every x minutes 
 
 // id = "age"
@@ -217,4 +182,27 @@ function checkLifeStatus () {
 };
 
 checkLifeStatus();
+
+/* 
+Feature JS 
+
+1. not able to press the button after Angry Bird is dead.
+2. when pet dies the other bars stop and the game starts over. / lifeStatus
+3. create Levels increase timer each Level 
+4. add value to Progress bar 
+5. When Angry Birds dies pop up Gif and games ends 
+6. restart the game automatically without to refresh the browser 
+
+
+
+Feature HTML 
+
+1. restructur the index File 
+
+Feature CSS
+
+1. header 
+2. GIF Quality 
+
+*/
 

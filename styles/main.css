@@ -49,3 +49,8 @@ h1 {
 body {
   background-color:   #FFF200;
 }
+
+span {
+  font-size: large;
+  text-align: center;
+}
