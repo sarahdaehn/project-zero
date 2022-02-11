@@ -1,4 +1,9 @@
 # project-zero
+
+# Angry Bird Game 
+
+Angry Bird is made like the Tamagoshi System. You have to feed, let it sleep or play with it so it doesn't die. It will die when the Hunger, Sleepinees or Boredom hits 10. That means you will have to interact with it so it doesn't die!
+
 # MVP User Stories 
 
 
@@ -15,8 +20,6 @@
 - As a user I want to see changes when it reach a specific age. 
 
 # Wireframe
-
-![](Wireframe-projectzero.jpg)
 
 ![](Images/Wireframe-projectzero.jpg)
 
@@ -53,3 +56,9 @@
 3. Change Background first loading 
 4. change colors from the buttons and bar 
 
+
+# Technologies 
+
+1. HTML
+2. CSS
+3. Java Script
