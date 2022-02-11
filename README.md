@@ -2,7 +2,16 @@
 
 # Angry Bird Game 
 
-Angry Bird is made like the Tamagoshi System. You have to feed, let it sleep or play with it so it doesn't die. It will die when the Hunger, Sleepinees or Boredom hits 10. That means you will have to interact with it so it doesn't die!
+Angry Bird is based on the Tamagoshi System. You have to feed, let it sleep or play with it so it doesn't die. It will die when the Hunger, Sleepinees or Boredom hits 10. That means you will have to interact with it so it doesn't die!
+
+That's the first Project "Project-Zero" for the Software Engineer Immersice Course at Generel Assembley. 
+
+ 
+# Link to Angry Bird Game 
+
+https://sarahdaehn.github.io/project-zero/
+
+
 
 # MVP User Stories 
 
@@ -68,3 +77,5 @@ Angry Bird is made like the Tamagoshi System. You have to feed, let it sleep or 
 1. HTML
 2. CSS
 3. Java Script
+
+
