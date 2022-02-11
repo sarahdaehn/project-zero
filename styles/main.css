@@ -4,6 +4,7 @@
 
 .selector-for-some-widget {
     box-sizing: content-box;
+    display: flex;
   }
   
 img {
@@ -38,6 +39,7 @@ img {
 
 h1 {
   text-align: center;
+  display: flex;
 }
 /*
 #AngrysBirdsName {
@@ -48,9 +50,17 @@ h1 {
 
 body {
   background-color:   #FFF200;
+  display: flex;
 }
 
 span {
   font-size: large;
   text-align: center;
 }
+
+
+@media (min-width: 600px) {
+  body {
+   background: #FFF200; 
+  }
+ }
