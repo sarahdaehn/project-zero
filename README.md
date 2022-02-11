@@ -18,6 +18,10 @@
 
 ![](Wireframe-projectzero.jpg)
 
+![](Images/Wireframe-projectzero.jpg)
+
+
+
 # Features 
 
 - As a user, I want to choose between 3 Pets: 1,2,3.
